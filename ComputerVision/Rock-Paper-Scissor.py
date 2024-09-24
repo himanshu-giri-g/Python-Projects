@@ -84,7 +84,7 @@ while True:
             user_gesture = get_gesture(hand_landmarks)
 
     # Display game status
-    cv2.putText(frame, f"User Gesture: {user_gesture}", (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv2.putText(frame, f"User Gesture: {user_gesture}", (10, 40), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 0), 2)
 
     # If the game duration has passed, play a round
     if time.time() - start_time > game_duration:
@@ -95,7 +95,7 @@ while True:
 
     # Display computer's choice and the game result
     if game_result:
-        cv2.putText(frame, f"Computer: {computer_move}", (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+        cv2.putText(frame, f"Computer: {computer_move}", (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
         cv2.putText(frame, f"Result: {game_result}", (10, 120), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
 
     # Show the frame
