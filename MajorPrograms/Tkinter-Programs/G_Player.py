@@ -10,7 +10,7 @@ from mutagen.mp3 import MP3
 class G_player:
     def __init__(self, root):
         self.root = root
-        self.root.title("YMUSIC PLAYER")
+        self.root.title("G_MUSIC-PLAYER")
         self.root.geometry("750x450")
 
         # Initialize mixer and playlists
